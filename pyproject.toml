@@ -62,6 +62,7 @@ openai-whisper = { version = "^20230314", optional = true }
 stable-ts = { version ="^2.6.2", optional = true }
 python-slugify = "^8.0.1"
 elevenlabs = {version = "^0.2.27", optional = true}
+yandex-speechkit = {version = "^1.5.0", optional = true}
 
 [tool.poetry.extras]
 azure = ["azure-cognitiveservices-speech"]
@@ -74,6 +75,7 @@ recorder = ["PyAudio", "pynput"]
 translate = ["deepl"]
 elevenlabs = ["elevenlabs"]
 transcribe = ["openai-whisper", "stable-ts"]
+yandex-speechkit = ["yandex-speechkit"]
 all = [
     "azure-cognitiveservices-speech",
     "gTTS",
@@ -86,7 +88,8 @@ all = [
     "deepl",
     "openai-whisper",
     "stable-ts",
-    "elevenlabs"
+    "elevenlabs",
+    "yandex-speechkit"
 ]
 
 [tool.poetry.group.dev.dependencies]
